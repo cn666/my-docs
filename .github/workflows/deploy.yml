@@ -1,0 +1,41 @@
+name: 部署文档到服务器
+
+# 触发条件：当 main 分支有代码推送时自动运行
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest   # 在 GitHub 提供的 Ubuntu 机器上运行
+
+    steps:
+      # 第一步：拉取仓库代码
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      # 第二步：安装 Node.js
+      - name: 安装 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # 第三步：安装依赖
+      - name: 安装依赖
+        run: npm install
+
+      # 第四步：构建 VitePress
+      - name: 构建文档
+        run: npm run docs:build
+
+      # 第五步：将构建产物部署到服务器
+      - name: 部署到服务器
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          SOURCE: "docs/.vitepress/dist/"
+          TARGET: "/home/my-docs/docs/.vitepress/dist/"
+          ARGS: "-avz --delete"

@@ -1,8 +1,10 @@
-# 依赖目录（太大了，不需要提交，可以通过 npm install 重新生成）
+# 锟斤拷锟斤拷目录锟斤拷太锟斤拷锟剿ｏ拷锟斤拷锟斤拷要锟结交锟斤拷锟斤拷锟斤拷通锟斤拷 npm install 锟斤拷锟斤拷锟斤拷锟缴ｏ拷
 node_modules/
 
-# 构建产物（可以通过 npm run docs:build 重新生成）
+# 锟斤拷锟斤拷锟斤拷锟斤（锟斤拷锟斤拷通锟斤拷 npm run docs:build 锟斤拷锟斤拷锟斤拷锟缴ｏ拷
 docs/.vitepress/dist/
 
-# VitePress 缓存
+# VitePress 锟斤拷锟斤拷
 docs/.vitepress/cache/
+
+.github
