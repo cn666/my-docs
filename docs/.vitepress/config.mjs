@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   // ========== 站点基本信息 ==========
-  title: "我的知识库",           // 站点标题，显示在浏览器标签页和导航栏
+  title: "知识库",           // 站点标题，显示在浏览器标签页和导航栏
   description: "个人学习笔记与知识点记录",  // 站点描述，用于 SEO
 
   // ========== 主题配置 ==========
@@ -30,7 +30,8 @@ export default defineConfig({
           items: [               // 分组下的链接列表
             { text: 'JavaScript', link: '/frontend/javascript' },
             { text: 'CSS', link: '/frontend/css' },
-            { text: 'Vue.js', link: '/frontend/vue' }
+            { text: 'Vue.js', link: '/frontend/vue' },
+            { text: 'markdown', link: '/frontend/markdown' },
           ]
         }
       ],
@@ -59,7 +60,7 @@ export default defineConfig({
     // ---------- 社交链接 ----------
     // 显示在导航栏右侧的图标链接（可选，不需要可以删除）
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/你的用户名' }
+      { icon: 'github', link: 'https://github.com/cn666' }
     ],
 
     // ---------- 搜索功能 ----------

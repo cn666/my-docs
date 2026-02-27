@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "我的知识库"
+  name: "知识库"
   text: "学习笔记与知识点记录"
   tagline: 好记性不如烂笔头
   actions:
@@ -11,7 +11,7 @@ hero:
       link: /frontend/javascript
     - theme: alt
       text: GitHub
-      link: https://github.com/你的用户名
+      link: https://github.com/cn666
 
 features:
   - title: 前端技术
