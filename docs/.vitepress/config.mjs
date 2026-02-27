@@ -7,7 +7,7 @@ export default defineConfig({
 
   // ========== 主题配置 ==========
   themeConfig: {
-
+    logo: '/images/logo.svg',
     // ---------- 顶部导航栏 ----------
     // 显示在页面最上方的导航链接
     // text: 显示的文字
@@ -16,7 +16,8 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '前端', link: '/frontend/javascript' },
       { text: '后端', link: '/backend/java' },
-      { text: '运维', link: '/devops/linux' }
+      { text: '运维', link: '/devops/linux' },
+      { text: '教程', link: '/tutorial/vitePress'}
     ],
 
     // ---------- 左侧侧边栏 ----------
@@ -52,6 +53,14 @@ export default defineConfig({
           items: [
             { text: 'Linux', link: '/devops/linux' },
             { text: 'Docker', link: '/devops/docker' }
+          ]
+        }
+      ],
+      '/tutorial/': [
+        {
+          text: '教程',
+          items: [
+            { text: 'vitePress', link: '/tutorial/vitePress' },
           ]
         }
       ]
