@@ -15,19 +15,26 @@ jobs:
       - name: 拉取代码
         uses: actions/checkout@v4
 
-      # 第二步：安装 Node.js
+      # 第二步：安装 pnpm
+      - name: 安装 pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      # 第三步：安装 Node.js
       - name: 安装 Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: pnpm
 
-      # 第三步：安装依赖
+      # 第四步：安装依赖
       - name: 安装依赖
-        run: npm install
+        run: pnpm install
 
-      # 第四步：构建 VitePress
+      # 第五步：构建 VitePress
       - name: 构建文档
-        run: npm run docs:build
+        run: pnpm docs:build
 
       # 第五步：将构建产物部署到服务器
       - name: 部署到服务器
