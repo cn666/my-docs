@@ -31,7 +31,7 @@ jobs:
 
       # 第五步：将构建产物部署到服务器
       - name: 部署到服务器
-        uses: easingthemes/ssh-deploy@v5
+        uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
