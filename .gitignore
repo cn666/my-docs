@@ -1,0 +1,8 @@
+# 依赖目录（太大了，不需要提交，可以通过 npm install 重新生成）
+node_modules/
+
+# 构建产物（可以通过 npm run docs:build 重新生成）
+docs/.vitepress/dist/
+
+# VitePress 缓存
+docs/.vitepress/cache/
