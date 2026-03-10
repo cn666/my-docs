@@ -17,7 +17,8 @@ export default defineConfig({
       { text: '前端', link: '/frontend/javascript' },
       { text: '后端', link: '/backend/java' },
       { text: '运维', link: '/devops/linux' },
-      { text: '教程', link: '/tutorial/vitePress'}
+      { text: '教程', link: '/tutorial/vitePress'},
+      { text: 'AI', link: '/ai/codex-and-claude' }
     ],
 
     // ---------- 左侧侧边栏 ----------
@@ -61,6 +62,15 @@ export default defineConfig({
           text: '教程',
           items: [
             { text: 'vitePress', link: '/tutorial/vitePress' },
+          ]
+        }
+      ],
+      '/ai/': [
+        {
+          text: 'AI 工具',
+          items: [
+            { text: 'Codex & Claude 入门', link: '/ai/codex-and-claude' },
+            { text: 'CC Switch 配置管理', link: '/ai/cc-switch' }
           ]
         }
       ]

@@ -20,4 +20,6 @@ features:
     details: Java、数据库等后端开发知识
   - title: 运维知识
     details: Linux、Docker 等运维相关知识
+  - title: AI 工具
+    details: Codex CLI、Claude Code 等 AI 编程助手使用教程
 ---
