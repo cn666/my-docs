@@ -87,10 +87,6 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    footer: {
-      message:
-        '<a class="beian-footer-link" href="https://beian.mps.gov.cn/#/query/webSearch?code=61011602000783" rel="noreferrer" target="_blank"><img class="beian-footer-icon" src="/images/footer.png" alt="公安备案图标" />陕公网安备61011602000783号</a>'
-    },
 
     // ---------- 中文化 ----------
     docFooter: {

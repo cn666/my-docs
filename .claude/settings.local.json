@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(npx vitepress:*)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:help.apiyi.com)",
+      "WebFetch(domain:deepwiki.com)"
+    ]
+  }
+}

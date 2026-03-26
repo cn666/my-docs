@@ -1,0 +1,40 @@
+.beian-footer {
+  border-top: 1px solid var(--vp-c-gutter);
+  padding: 12px 24px;
+  background-color: var(--vp-c-bg);
+}
+
+.beian-footer__container {
+  margin: 0 auto;
+  max-width: var(--vp-layout-max-width);
+  text-align: center;
+}
+
+.beian-footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  text-decoration-line: underline;
+  text-underline-offset: 2px;
+  transition: color 0.25s;
+}
+
+.beian-footer__link:hover {
+  color: var(--vp-c-text-1);
+}
+
+.beian-footer__icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .beian-footer {
+    padding: 12px 32px;
+  }
+}
