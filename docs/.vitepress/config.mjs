@@ -42,8 +42,22 @@ export default defineConfig({
         {
           text: '后端技术',
           items: [
-            { text: 'Java', link: '/backend/java' },
-            { text: '数据库', link: '/backend/database' }
+            { text: 'Java', link: '/backend/java' }
+          ]
+        },
+        {
+          text: 'Java SpringBoot 完整教程',
+          items: [
+            { text: '课程介绍', link: '/backend/java-springboot-guide/' },
+            { text: '01-开发环境与第一个Java程序', link: '/backend/java-springboot-guide/01-开发环境与第一个Java程序' },
+            { text: '02-Java语法基础', link: '/backend/java-springboot-guide/02-Java语法基础' },
+            { text: '03-面向对象与常用API', link: '/backend/java-springboot-guide/03-面向对象与常用API' },
+            { text: '04-Maven-Git与测试基础', link: '/backend/java-springboot-guide/04-Maven-Git与测试基础' },
+            { text: '05-Spring与SpringBoot核心概念', link: '/backend/java-springboot-guide/05-Spring与SpringBoot核心概念' },
+            { text: '06-REST接口开发', link: '/backend/java-springboot-guide/06-REST接口开发' },
+            { text: '07-数据库与SpringDataJPA', link: '/backend/java-springboot-guide/07-数据库与SpringDataJPA' },
+            { text: '08-待办事项项目实战', link: '/backend/java-springboot-guide/08-待办事项项目实战' },
+            { text: '09-调试排错与后续路线', link: '/backend/java-springboot-guide/09-调试排错与后续路线' }
           ]
         }
       ],
@@ -70,7 +84,8 @@ export default defineConfig({
           text: 'AI 工具',
           items: [
             { text: 'Codex & Claude 入门', link: '/ai/codex-and-claude' },
-            { text: 'CC Switch 配置管理', link: '/ai/cc-switch' }
+            { text: 'CC Switch', link: '/ai/cc-switch' },
+            { text: 'Agent全栈工程师学习计划', link: '/ai/Agent全栈工程师学习计划' }
           ]
         }
       ]
